@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paron Asib S | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="ai-loader"></div>
+    <p class="loader-text">Initializing<span class="dots"></span></p>
+  </div>
+</div>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow"></div>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">PARON<span>.AI</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-up">Available for opportunities</p>
+    <h1 class="reveal-up delay-1">Paron Asib S</h1>
+    <div class="hero-typed-wrap reveal-up delay-2">
+      <span class="typed-prefix">$ </span><span id="typed-out"></span><span class="typed-cursor">|</span>
+    </div>
+    <p class="hero-desc reveal-up delay-3">M.Tech CS student specializing in AI, Computer Vision, Java Development, and Intelligent Automation. Passionate about building scalable software solutions and AI-powered systems that make technology accessible and impactful.</p>
+    <div class="hero-btns reveal-up delay-4">
+      <a href="#projects" class="btn btn-yellow">View Projects →</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-visual reveal-up delay-2">
+    <div class="hero-right">
+
+    <div class="hero-photo-container">
+
+          <div class="profile-badge">
+        
+    </div>
+
+    <img src="{{ url_for('static', filename='images/16.png') }}"
+         alt="Paron Asib S"
+         class="hero-photo">
+
+    </div>
+
+</div>
+    
+      <defs>
+        <filter id="yglow">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <line x1="170" y1="30" x2="170" y2="58" stroke="#F5E642" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="170" cy="22" r="9" fill="#111" stroke="#F5E642" stroke-width="2"/>
+      <circle cx="170" cy="22" r="4" fill="#F5E642" filter="url(#yglow)">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="140" y1="42" x2="120" y2="28" stroke="#F5E642" stroke-width="1.5" opacity=".6"/>
+      <circle cx="115" cy="25" r="4" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <circle cx="115" cy="25" r="2" fill="#F5E642"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle>
+      <line x1="200" y1="42" x2="220" y2="28" stroke="#F5E642" stroke-width="1.5" opacity=".6"/>
+      <circle cx="225" cy="25" r="4" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <circle cx="225" cy="25" r="2" fill="#F5E642"><animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/></circle>
+      <rect x="110" y="58" width="120" height="100" rx="22" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="122" y="76" width="96" height="38" rx="10" fill="#0a0a0a" stroke="#F5E642" stroke-width="1" opacity=".7"/>
+      <circle cx="148" cy="95" r="11" fill="#F5E642" filter="url(#yglow)"><animate attributeName="r" values="10;12;10" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="192" cy="95" r="11" fill="#F5E642" filter="url(#yglow)"><animate attributeName="r" values="10;12;10" dur="3s" begin=".5s" repeatCount="indefinite"/></circle>
+      <circle cx="151" cy="92" r="3.5" fill="#111"/>
+      <circle cx="195" cy="92" r="3.5" fill="#111"/>
+      <rect x="134" y="86" width="28" height="18" rx="3" fill="#0a0a0a" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;1;0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="178" y="86" width="28" height="18" rx="3" fill="#0a0a0a" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;1;0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="136" y="128" width="68" height="12" rx="6" fill="#0a0a0a"/>
+      <rect x="140" y="131" width="35" height="5" rx="2.5" fill="#F5E642" opacity=".8">
+        <animate attributeName="width" values="10;55;30;45;20;55" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="158" y="158" width="24" height="18" rx="4" fill="#111" stroke="#333"/>
+      <rect x="92" y="176" width="156" height="130" rx="20" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <line x1="100" y1="200" x2="240" y2="200" stroke="#1a1a1a" stroke-width="1"/>
+      <line x1="100" y1="260" x2="240" y2="260" stroke="#1a1a1a" stroke-width="1"/>
+      <rect x="136" y="208" width="68" height="44" rx="12" fill="#0a0a0a" stroke="#F5E642" stroke-width="1" opacity=".9"/>
+      <circle cx="170" cy="230" r="18" fill="none" stroke="#F5E642" stroke-width="1.5" opacity=".5"/>
+      <circle cx="170" cy="230" r="18" fill="none" stroke="#F5E642" stroke-width="1" opacity=".3" stroke-dasharray="8 4">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 230" to="360 170 230" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="170" cy="230" r="10" fill="#F5E642" opacity=".12"><animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="170" cy="230" r="5" fill="#F5E642" filter="url(#yglow)"/>
+      <rect x="104" y="210" width="24" height="38" rx="5" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1"/>
+      <rect x="108" y="214" width="16" height="4" rx="2" fill="#F5E642" opacity=".8"/>
+      <rect x="108" y="222" width="16" height="4" rx="2" fill="#F5E642" opacity=".5"/>
+      <rect x="108" y="230" width="10" height="4" rx="2" fill="#F5E642" opacity=".3"/>
+      <rect x="212" y="210" width="24" height="38" rx="5" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1"/>
+      <circle cx="224" cy="220" r="4" fill="none" stroke="#F5E642" stroke-width="1"/>
+      <circle cx="224" cy="220" r="2" fill="#F5E642" opacity=".7"><animate attributeName="opacity" values=".7;1;.7" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="224" cy="232" r="4" fill="none" stroke="#F5E642" stroke-width="1"/>
+      <circle cx="224" cy="232" r="2" fill="#F5E642" opacity=".5"><animate attributeName="opacity" values="1;.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+      <rect x="100" y="272" width="140" height="16" rx="5" fill="#111" stroke="#1a1a1a" stroke-width="1"/>
+      <rect x="50" y="182" width="38" height="100" rx="14" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="56" y="196" width="26" height="6" rx="3" fill="#1a1a1a"/>
+      <rect x="56" y="208" width="26" height="6" rx="3" fill="#1a1a1a"/>
+      <rect x="52" y="234" width="34" height="14" rx="5" fill="#111" stroke="#1a1a1a"/>
+      <rect x="52" y="286" width="34" height="30" rx="10" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="55" y="318" width="6" height="14" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="63" y="318" width="6" height="16" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="71" y="318" width="6" height="16" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="79" y="318" width="6" height="12" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="252" y="182" width="38" height="100" rx="14" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="258" y="196" width="26" height="6" rx="3" fill="#1a1a1a"/>
+      <rect x="258" y="208" width="26" height="6" rx="3" fill="#1a1a1a"/>
+      <rect x="254" y="234" width="34" height="14" rx="5" fill="#111" stroke="#1a1a1a"/>
+      <rect x="254" y="286" width="34" height="30" rx="10" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="257" y="318" width="6" height="14" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="265" y="318" width="6" height="16" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="273" y="318" width="6" height="16" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="281" y="318" width="6" height="12" rx="3" fill="#111" stroke="#1a1a1a"/>
+      <rect x="110" y="288" width="120" height="30" rx="10" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="116" y="318" width="44" height="70" rx="12" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="180" y="318" width="44" height="70" rx="12" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="108" y="388" width="56" height="20" rx="8" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <rect x="176" y="388" width="56" height="20" rx="8" fill="#111" stroke="#F5E642" stroke-width="1.5"/>
+      <ellipse cx="170" cy="416" rx="80" ry="8" fill="#F5E642" opacity=".06"/>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item reveal-up">
+    <div class="stat-num" data-target="6" data-suffix="+">0</div>
+    <div class="stat-label">Projects Built</div>
+  </div>
+  <div class="stat-item reveal-up delay-1">
+    <div class="stat-num" data-target="3" data-suffix="">0</div>
+    <div class="stat-label">Publications</div>
+  </div>
+  <div class="stat-item reveal-up delay-2">
+    <div class="stat-num" data-target="899" data-suffix="" data-decimal="8.99">0</div>
+    <div class="stat-label">M.Tech CGPA</div>
+  </div>
+  <div class="stat-item reveal-up delay-3">
+    <div class="stat-num" data-target="2" data-suffix="">0</div>
+    <div class="stat-label">Internships</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">01 — About</span>
+    <h2 class="sec-title reveal-up">Who I Am</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="about-grid">
+      <div class="about-text reveal-up">
+        <p>M.Tech Computer Science student at SRM Institute of Science and Technology, specializing in Artificial Intelligence, Computer Vision, and intelligent automation systems.</p>
+        <p>Experienced in developing AI-driven applications involving OCR, BLIP, deep learning, and speech processing through research projects and internships.</p>
+        <p>Strong foundation in Python, Java, and real-time AI solutions with proven leadership experience. Published researcher at international conferences.</p>
+        <div class="pills">
+          <span class="pill">TensorFlow</span><span class="pill">Keras</span><span class="pill">OpenCV</span>
+          <span class="pill">BLIP</span><span class="pill">OCR</span><span class="pill">NLP</span>
+          <span class="pill">CNN</span><span class="pill">LSTM-CTC</span><span class="pill">ArcFace</span>
+          <span class="pill">OSNet</span><span class="pill">Flask</span><span class="pill">GitHub</span>
+          <span class="pill">Jupyter</span><span class="pill">Spring Boot</span>
+        </div>
+      </div>
+      <div class="skills-wrap reveal-up delay-2">
+
+    <div class="skills-photo-card">
+        <img src="{{ url_for('static', filename='images/IMG_1635.JPG') }}"
+             alt="Paron Achievement"
+             class="skills-photo">
+    </div>
+
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-dark" id="experience">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">02 — Experience</span>
+    <h2 class="sec-title reveal-up">Professional Work</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="timeline">
+      <div class="tl-item left reveal-up">
+        <div class="tl-card">
+          <div class="tl-period">Feb 2026 – Apr 2026</div>
+          <div class="tl-company">KaizenSpark Tech Pvt. Ltd.</div>
+          <div class="tl-role">Software Development Intern</div>
+          <ul>
+            <li>Contributed to software development in an agile environment</li>
+            <li>Implemented, tested, and debugged application modules</li>
+            <li>Collaborated with teams to enhance performance and functionality</li>
+            <li>Supported issue resolution and software maintenance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item right reveal-up delay-1">
+        <div class="tl-card">
+          <div class="tl-period">Jun 2025 – Jul 2025</div>
+          <div class="tl-company">Prodigy InfoTech</div>
+          <div class="tl-role">Web Development Intern</div>
+          <ul>
+            <li>Developed responsive web applications with full-stack integration</li>
+            <li>Implemented new features and validated application functionality</li>
+            <li>Improved user experience and performance collaboratively</li>
+            <li>Completed with outstanding performance recognition</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="journey-gallery">
+
+<div class="section-inner">
+
+<span class="sec-tag">// Memories</span>
+<h2>Professional Journey</h2>
+
+<div class="journey-scroll">
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/1.jpeg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/2.jpg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/3.png') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/4.jpeg') }}">
+</div>
+
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/6.png') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/7.jpg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/8.jpg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/9.jpg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/10.jpg') }}">
+</div>
+
+<div class="journey-card reveal">
+    <img src="{{ url_for('static', filename='Images/11.jpg') }}">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">04 — Projects</span>
+    <h2 class="sec-title reveal-up">Featured Work</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal-up">
+        <div class="proj-img-block">
+          <span class="proj-num">001</span>
+          <span class="proj-category">CV · DEEP LEARNING</span>
+          <span class="proj-badge">Published</span>
+        </div>
+        <div class="proj-body">
+          <div class="conf-tag">ICISD 2026</div>
+          <h3 class="proj-title">AI Drone Surveillance System</h3>
+          <p class="proj-desc">Real-time object detection and tracking for aerial monitoring pipelines using Computer Vision and Deep Learning.</p>
+          <div class="proj-stack">Python · OpenCV · TensorFlow</div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-up delay-1">
+        <div class="proj-img-block">
+          <span class="proj-num">002</span>
+          <span class="proj-category">ACCESSIBILITY · NLP</span>
+          <span class="proj-badge">Published</span>
+        </div>
+        <div class="proj-body">
+          <div class="conf-tag">ICISD 2025</div>
+          <h3 class="proj-title">Vision-to-Voice: Comics to Audio</h3>
+          <p class="proj-desc">Converts comic books into narrated audio stories for visually impaired children using OCR and BLIP image captioning.</p>
+          <div class="proj-stack">Flask · OCR · BLIP · Google Drive API</div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-up delay-2">
+        <div class="proj-img-block">
+          <span class="proj-num">003</span>
+          <span class="proj-category">NLP · SPEECH</span>
+          <span class="proj-badge">Published</span>
+        </div>
+        <div class="proj-body">
+          <div class="conf-tag">Smart Campus Vol. II</div>
+          <h3 class="proj-title">Lectura — Offline Lecture AI</h3>
+          <p class="proj-desc">Offline privacy-preserving speech-to-text for lecture transcription with LSTM-CTC models and voice activity detection.</p>
+          <div class="proj-stack">Python · NLP · Speech Recognition · LSTM-CTC</div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-up">
+        <div class="proj-img-block">
+          <span class="proj-num">004</span>
+          <span class="proj-category">COMPUTER VISION</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Object Detection System</h3>
+          <p class="proj-desc">Real-time multi-object detection with Intel NCS2 hardware acceleration and optimized deep learning models.</p>
+          <div class="proj-stack">Python · OpenCV · TensorFlow · Intel NCS2</div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-up delay-1">
+        <div class="proj-img-block">
+          <span class="proj-num">005</span>
+          <span class="proj-category">FULL STACK</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Event Booking System</h3>
+          <p class="proj-desc">Complete event booking platform with ticket generation, seat selection, and automated email notifications.</p>
+          <div class="proj-stack">Flask · HTML · CSS · JavaScript</div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-up delay-2">
+        <div class="proj-img-block">
+          <span class="proj-num">006</span>
+          <span class="proj-category">AUTOMATION</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">OD Management Portal</h3>
+          <p class="proj-desc">Automated On-Duty management for student requests, approvals and academic workflow via Google Forms integration.</p>
+          <div class="proj-stack">Python · Flask · Google Forms</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="section section-dark" id="publications">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">05 — Research</span>
+    <h2 class="sec-title reveal-up">Publications</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="pub-list">
+      <div class="pub-card reveal-up">
+        <div class="pub-num">01</div>
+        <div>
+          <div class="pub-title">A Multi-Stage Computer Vision Architecture for UAV-Based Crowd Suspect Identification</div>
+          <div class="pub-venue">ICISD 2026 — International Conference on Intelligent Systems and Digital Transformation</div>
+        </div>
+      </div>
+      <div class="pub-card reveal-up delay-1">
+        <div class="pub-num">02</div>
+        <div>
+          <div class="pub-title">Vision-to-Voice: Transforming Comics into Immersive Audiobooks with BLIP and OCR</div>
+          <div class="pub-venue">ICISD 2025 — International Conference on Intelligent Systems and Digital Transformation</div>
+        </div>
+      </div>
+      <div class="pub-card reveal-up delay-2">
+        <div class="pub-num">03</div>
+        <div>
+          <div class="pub-title">Lecture Capture in Classroom</div>
+          <div class="pub-venue">Smart Campus Initiatives, Vol. II (2025)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section" id="awards">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">06 — Recognition</span>
+    <h2 class="sec-title reveal-up">Awards</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="award-grid">
+      <div class="award-card reveal-up">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="award-text">Best Outgoing Student Award — SRM IST (2024–2026)</div>
+      </div>
+      <div class="award-card reveal-up delay-1">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="award-text">International Conference Presenter — ICISD 2026</div>
+      </div>
+      <div class="award-card reveal-up delay-2">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="award-text">International Conference Presenter — ICISD 2025</div>
+      </div>
+      <div class="award-card reveal-up">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="award-text">Pre-Finalist — SIGHT 3.0 National Technical Project Expo (2026)</div>
+      </div>
+      <div class="award-card reveal-up delay-1">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/></svg>
+        </div>
+        <div class="award-text">Finalist — SIGHT 2.0 National Technical Project Expo (2025)</div>
+      </div>
+      <div class="award-card reveal-up delay-2">
+        <div class="award-icon-block">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="award-text">Finalist — HACKELITE Hackathon, SRM IST (2025)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section section-dark" id="education">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">07 — Education</span>
+    <h2 class="sec-title reveal-up">Academic Background</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="edu-list">
+      <div class="edu-card reveal-up">
+        <div class="edu-year">2024–2026</div>
+        <div class="edu-info">
+          <div class="edu-degree">M.Tech — Computer Science and Engineering</div>
+          <div class="edu-school">SRM Institute of Science and Technology, Chennai</div>
+          <div class="edu-cgpa">CGPA: 8.99 / 10</div>
+        </div>
+      </div>
+      <div class="edu-card reveal-up delay-1">
+        <div class="edu-year">2020–2024</div>
+        <div class="edu-info">
+          <div class="edu-degree">B.E — Electronics and Communication Engineering</div>
+          <div class="edu-school">Vel Tech Multi Tech Dr Rangarajan Dr Sakunthala Engineering College, Chennai</div>
+          <div class="edu-cgpa">CGPA: 7.58 / 10</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <span class="sec-tag reveal-up">09 — Contact</span>
+    <h2 class="sec-title reveal-up">Get In Touch</h2>
+    <div class="sec-line reveal-up"></div>
+    <div class="contact-grid reveal-up">
+      <a class="contact-link" href="mailto:paronasibsuneel@gmail.com">
+        <span class="contact-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+        </span>
+        paronasibsuneel@gmail.com
+      </a>
+      <a class="contact-link" href="tel:+918939386670">
+        <span class="contact-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.08 3.41a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+        </span>
+        +91 89393 86670
+      </a>
+      <a class="contact-link" href="https://linkedin.com/in/paron-asib-s-0a71a72b1" target="_blank">
+        <span class="contact-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </span>
+        LinkedIn Profile
+      </a>
+      <a class="contact-link" href="https://github.com/PARONASIBS" target="_blank">
+        <span class="contact-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </span>
+        github.com/PARONASIBS
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">PARON<span>.AI</span></div>
+    <p>M.Tech AI Engineer · Chennai, India</p>
+    <p class="footer-copy">© 2026 Paron Asib S. Built with Flask.</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Paron Asib S | AI Engineer</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h2 class="logo">PARON<span>.AI</span></h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div style="position:relative;z-index:1">
+<div class="hero">
+  <div class="hero-content" style="animation:fadeUp .9s cubic-bezier(.22,1,.36,1)">
+    <div class="hero-badge">Available for opportunities</div>
+    <h1>Hi, I'm<br><span class="grad">Paron Asib S</span></h1>
+    <p class="hero-prompt">$ <span class="typed"></span><span class="cursor"></span></p>
+    <p>M.Tech CS student specializing in AI, Computer Vision &amp; intelligent automation. Building systems that make technology accessible and impactful.</p>
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects →</a>
+      <a href="#contact" class="btn-ghost">↓ Get in touch</a>
+    </div>
+  </div>
+
+  <!-- AI ROBOT SVG -->
+  <div class="robot-wrap">
+    <div class="robot-glow"></div>
+    <svg class="robot-svg" width="340" height="420" viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- ANTENNA -->
+      <line x1="170" y1="30" x2="170" y2="58" stroke="#6c8fff" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="170" cy="22" r="9" fill="#0d0d1a" stroke="#6c8fff" stroke-width="2"/>
+      <circle cx="170" cy="22" r="4" fill="#6c8fff">
+        <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <!-- side antennae -->
+      <line x1="140" y1="42" x2="120" y2="28" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="115" cy="25" r="5" fill="#0d0d1a" stroke="#a78bfa" stroke-width="1.5"/>
+      <circle cx="115" cy="25" r="2.5" fill="#a78bfa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <line x1="200" y1="42" x2="220" y2="28" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="225" cy="25" r="5" fill="#0d0d1a" stroke="#a78bfa" stroke-width="1.5"/>
+      <circle cx="225" cy="25" r="2.5" fill="#a78bfa">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- HEAD -->
+      <rect x="110" y="58" width="120" height="100" rx="22" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <!-- head highlight -->
+      <rect x="118" y="64" width="80" height="6" rx="3" fill="#1a1a35" opacity="0.8"/>
+
+      <!-- VISOR -->
+      <rect x="122" y="76" width="96" height="38" rx="10" fill="#060614" stroke="#6c8fff" stroke-width="1" opacity="0.9"/>
+      <!-- scan line in visor -->
+      <rect x="123" y="77" width="94" height="36" rx="9" fill="none" stroke="#6c8fff" stroke-width="0.5" opacity="0.3"/>
+      <line x1="123" y1="95" x2="217" y2="95" stroke="#6c8fff" stroke-width="0.8" opacity="0.2"/>
+      <!-- eyes -->
+      <ellipse cx="148" cy="95" rx="14" ry="10" fill="#060614"/>
+      <ellipse cx="192" cy="95" rx="14" ry="10" fill="#060614"/>
+      <!-- eye glow rings -->
+      <ellipse cx="148" cy="95" rx="14" ry="10" fill="none" stroke="#6c8fff" stroke-width="1" opacity="0.6"/>
+      <ellipse cx="192" cy="95" rx="14" ry="10" fill="none" stroke="#6c8fff" stroke-width="1" opacity="0.6"/>
+      <!-- pupils -->
+      <circle cx="148" cy="95" r="6" fill="#6c8fff" filter="url(#glow)">
+        <animate attributeName="r" values="6;7;6" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="192" cy="95" r="6" fill="#6c8fff" filter="url(#glow)">
+        <animate attributeName="r" values="6;7;6" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <!-- eye shine -->
+      <circle cx="151" cy="92" r="2" fill="white" opacity="0.6"/>
+      <circle cx="195" cy="92" r="2" fill="white" opacity="0.6"/>
+      <!-- blink -->
+      <rect x="134" y="86" width="28" height="18" rx="3" fill="#060614" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="178" y="86" width="28" height="18" rx="3" fill="#060614" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0" dur="5s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- MOUTH / STATUS BAR -->
+      <rect x="136" y="128" width="68" height="14" rx="7" fill="#0d0d1a" stroke="#1a1a35" stroke-width="1"/>
+      <rect x="140" y="132" width="30" height="6" rx="3" fill="#6c8fff" opacity="0.8">
+        <animate attributeName="width" values="10;55;30;45;20;55" dur="4s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- NECK -->
+      <rect x="158" y="158" width="24" height="18" rx="4" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <!-- neck detail -->
+      <line x1="163" y1="162" x2="163" y2="172" stroke="#6c8fff" stroke-width="1" opacity="0.4"/>
+      <line x1="170" y1="160" x2="170" y2="174" stroke="#6c8fff" stroke-width="1" opacity="0.4"/>
+      <line x1="177" y1="162" x2="177" y2="172" stroke="#6c8fff" stroke-width="1" opacity="0.4"/>
+
+      <!-- TORSO -->
+      <rect x="92" y="176" width="156" height="130" rx="20" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <!-- torso panel lines -->
+      <line x1="100" y1="200" x2="240" y2="200" stroke="#1a1a2e" stroke-width="1"/>
+      <line x1="100" y1="260" x2="240" y2="260" stroke="#1a1a2e" stroke-width="1"/>
+
+      <!-- CHEST CORE -->
+      <rect x="136" y="208" width="68" height="44" rx="12" fill="#060614" stroke="#6c8fff" stroke-width="1" opacity="0.9"/>
+      <!-- core ring -->
+      <circle cx="170" cy="230" r="18" fill="none" stroke="#6c8fff" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="170" cy="230" r="18" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.3"
+        stroke-dasharray="8 4">
+        <animateTransform attributeName="transform" type="rotate" from="0 170 230" to="360 170 230" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- core glow -->
+      <circle cx="170" cy="230" r="10" fill="#6c8fff" opacity="0.15">
+        <animate attributeName="r" values="10;13;10" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.15;0.3;0.15" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="170" cy="230" r="5" fill="#6c8fff" filter="url(#glow)"/>
+
+      <!-- LEFT CHEST PANEL -->
+      <rect x="104" y="210" width="24" height="38" rx="5" fill="#060614" stroke="#1a1a35" stroke-width="1"/>
+      <rect x="108" y="214" width="16" height="4" rx="2" fill="#34d399" opacity="0.8"/>
+      <rect x="108" y="222" width="16" height="4" rx="2" fill="#6c8fff" opacity="0.7"/>
+      <rect x="108" y="230" width="10" height="4" rx="2" fill="#a78bfa" opacity="0.6"/>
+      <rect x="108" y="238" width="14" height="4" rx="2" fill="#6c8fff" opacity="0.5"/>
+
+      <!-- RIGHT CHEST PANEL -->
+      <rect x="212" y="210" width="24" height="38" rx="5" fill="#060614" stroke="#1a1a35" stroke-width="1"/>
+      <circle cx="224" cy="220" r="4" fill="none" stroke="#6c8fff" stroke-width="1"/>
+      <circle cx="224" cy="220" r="2" fill="#6c8fff" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="224" cy="232" r="4" fill="none" stroke="#34d399" stroke-width="1"/>
+      <circle cx="224" cy="232" r="2" fill="#34d399" opacity="0.6">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="224" cy="244" r="4" fill="none" stroke="#a78bfa" stroke-width="1"/>
+      <circle cx="224" cy="244" r="2" fill="#a78bfa" opacity="0.5"/>
+
+      <!-- WAIST BAND -->
+      <rect x="100" y="272" width="140" height="16" rx="5" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <line x1="108" y1="280" x2="232" y2="280" stroke="#6c8fff" stroke-width="0.8" opacity="0.25"/>
+
+      <!-- LEFT ARM -->
+      <rect x="50" y="182" width="38" height="100" rx="14" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <!-- arm detail -->
+      <rect x="56" y="196" width="26" height="6" rx="3" fill="#1a1a2e"/>
+      <rect x="56" y="208" width="26" height="6" rx="3" fill="#1a1a2e"/>
+      <!-- elbow joint -->
+      <rect x="52" y="234" width="34" height="14" rx="5" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <line x1="60" y1="241" x2="78" y2="241" stroke="#6c8fff" stroke-width="1" opacity="0.4"/>
+
+      <!-- LEFT HAND -->
+      <rect x="52" y="286" width="34" height="30" rx="10" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <!-- fingers -->
+      <rect x="55" y="318" width="6" height="14" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="63" y="318" width="6" height="16" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="71" y="318" width="6" height="16" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="79" y="318" width="6" height="12" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <!-- palm glow -->
+      <circle cx="69" cy="300" r="6" fill="#6c8fff" opacity="0.1">
+        <animate attributeName="opacity" values="0.1;0.25;0.1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- RIGHT ARM -->
+      <rect x="252" y="182" width="38" height="100" rx="14" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <rect x="258" y="196" width="26" height="6" rx="3" fill="#1a1a2e"/>
+      <rect x="258" y="208" width="26" height="6" rx="3" fill="#1a1a2e"/>
+      <rect x="254" y="234" width="34" height="14" rx="5" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <line x1="262" y1="241" x2="280" y2="241" stroke="#6c8fff" stroke-width="1" opacity="0.4"/>
+
+      <!-- RIGHT HAND -->
+      <rect x="254" y="286" width="34" height="30" rx="10" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <rect x="257" y="318" width="6" height="14" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="265" y="318" width="6" height="16" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="273" y="318" width="6" height="16" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <rect x="281" y="318" width="6" height="12" rx="3" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+      <circle cx="271" cy="300" r="6" fill="#a78bfa" opacity="0.1">
+        <animate attributeName="opacity" values="0.1;0.25;0.1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- HIPS -->
+      <rect x="110" y="288" width="120" height="30" rx="10" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <!-- hip vents -->
+      <line x1="118" y1="298" x2="150" y2="298" stroke="#1a1a2e" stroke-width="2"/>
+      <line x1="118" y1="306" x2="145" y2="306" stroke="#1a1a2e" stroke-width="2"/>
+      <line x1="190" y1="298" x2="222" y2="298" stroke="#1a1a2e" stroke-width="2"/>
+      <line x1="195" y1="306" x2="222" y2="306" stroke="#1a1a2e" stroke-width="2"/>
+
+      <!-- LEFT LEG -->
+      <rect x="116" y="318" width="44" height="70" rx="12" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <rect x="122" y="332" width="32" height="6" rx="3" fill="#1a1a2e"/>
+      <rect x="120" y="370" width="40" height="10" rx="4" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+
+      <!-- LEFT FOOT -->
+      <rect x="108" y="388" width="56" height="20" rx="8" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+
+      <!-- RIGHT LEG -->
+      <rect x="180" y="318" width="44" height="70" rx="12" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+      <rect x="186" y="332" width="32" height="6" rx="3" fill="#1a1a2e"/>
+      <rect x="180" y="370" width="40" height="10" rx="4" fill="#0d0d1a" stroke="#1a1a2e" stroke-width="1"/>
+
+      <!-- RIGHT FOOT -->
+      <rect x="176" y="388" width="56" height="20" rx="8" fill="#0d0d1a" stroke="#6c8fff" stroke-width="1.5"/>
+
+      <!-- FLOATING DATA PARTICLES -->
+      <circle cx="48" cy="140" r="2.5" fill="#6c8fff" opacity="0.5">
+        <animate attributeName="cy" values="140;120;140" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="36" cy="200" r="1.5" fill="#a78bfa" opacity="0.4">
+        <animate attributeName="cy" values="200;175;200" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="295" cy="155" r="2.5" fill="#34d399" opacity="0.5">
+        <animate attributeName="cy" values="155;130;155" dur="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="305" cy="210" r="1.5" fill="#6c8fff" opacity="0.4">
+        <animate attributeName="cy" values="210;190;210" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- FLOATING LABELS -->
+      <rect x="4" y="108" width="44" height="18" rx="4" fill="#060614" stroke="#6c8fff" stroke-width="0.8" opacity="0.7"/>
+      <text x="26" y="121" font-family="DM Mono, monospace" font-size="8" fill="#6c8fff" text-anchor="middle" opacity="0.7">CV</text>
+      <rect x="292" y="108" width="44" height="18" rx="4" fill="#060614" stroke="#34d399" stroke-width="0.8" opacity="0.7"/>
+      <text x="314" y="121" font-family="DM Mono, monospace" font-size="8" fill="#34d399" text-anchor="middle" opacity="0.7">NLP</text>
+      <rect x="4" y="168" width="44" height="18" rx="4" fill="#060614" stroke="#a78bfa" stroke-width="0.8" opacity="0.7"/>
+      <text x="26" y="181" font-family="DM Mono, monospace" font-size="8" fill="#a78bfa" text-anchor="middle" opacity="0.7">OCR</text>
+      <rect x="292" y="168" width="44" height="18" rx="4" fill="#060614" stroke="#6c8fff" stroke-width="0.8" opacity="0.7"/>
+      <text x="314" y="181" font-family="DM Mono, monospace" font-size="8" fill="#6c8fff" text-anchor="middle" opacity="0.7">DL</text>
+
+      <!-- shadow -->
+      <ellipse cx="170" cy="416" rx="80" ry="8" fill="#6c8fff" opacity="0.06"/>
+    </svg>
+  </div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 01 — About</span>
+  <h2 class="reveal">Who I Am</h2>
+  <div class="divider reveal"></div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>M.Tech Computer Science student at SRM Institute of Science and Technology, specializing in Artificial Intelligence, Computer Vision, and intelligent automation systems.</p>
+      <p>Experienced in developing AI-driven applications involving OCR, BLIP, deep learning, and speech processing through research projects and internships.</p>
+      <p>Strong foundation in Python, Java, and real-time AI solutions with proven leadership experience. Published researcher at international conferences.</p>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat">
+        <div class="stat-num"><span data-target="6" data-suffix="+">6+</span></div>
+        <p>Projects Built</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-target="3" data-suffix="">3</span></div>
+        <p>Publications</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-target="8.99" data-suffix="">8.99</span><span class="acc">/10</span></div>
+        <p>M.Tech CGPA</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-target="2" data-suffix="">2</span></div>
+        <p>Internships</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 02 — Experience</span>
+  <h2 class="reveal">Professional Work</h2>
+  <div class="divider reveal"></div>
+  <div class="exp-list">
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <span class="exp-company">KaizenSpark Tech Pvt. Ltd.</span>
+        <span class="exp-period">Feb 2026 – Apr 2026</span>
+      </div>
+      <p class="exp-role">Software Development Intern</p>
+      <ul>
+        <li>Contributed to software development projects within an agile development environment</li>
+        <li>Assisted in implementing, testing, and debugging application modules</li>
+        <li>Collaborated with development teams to enhance application functionality and performance</li>
+        <li>Supported issue resolution and software maintenance activities</li>
+      </ul>
+    </div>
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <span class="exp-company">Prodigy InfoTech</span>
+        <span class="exp-period">Jun 2025 – Jul 2025</span>
+      </div>
+      <p class="exp-role">Web Development Intern</p>
+      <ul>
+        <li>Developed responsive web applications with seamless frontend-backend integration</li>
+        <li>Assisted in implementing new features and validating application functionality</li>
+        <li>Collaborated with developers to improve user experience and performance</li>
+        <li>Completed internship with outstanding performance recognition</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 03 — Skills</span>
+  <h2 class="reveal">Technical Stack</h2>
+  <div class="divider reveal"></div>
+  <div class="skills-wrap">
+    <div class="skill reveal">
+      <div class="skill-header"><h4>Python</h4><span class="skill-pct">90%</span></div>
+      <div class="bar"><span style="width:90%"></span></div>
+    </div>
+    <div class="skill reveal">
+      <div class="skill-header"><h4>Java</h4><span class="skill-pct">85%</span></div>
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
+    <div class="skill reveal">
+      <div class="skill-header"><h4>Machine Learning / Deep Learning</h4><span class="skill-pct">82%</span></div>
+      <div class="bar"><span style="width:82%"></span></div>
+    </div>
+    <div class="skill reveal">
+      <div class="skill-header"><h4>Computer Vision</h4><span class="skill-pct">85%</span></div>
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
+    <div class="skill reveal">
+      <div class="skill-header"><h4>Flask / Spring Boot</h4><span class="skill-pct">78%</span></div>
+      <div class="bar"><span style="width:78%"></span></div>
+    </div>
+    <div class="tech-pills reveal">
+      <span class="pill">TensorFlow</span><span class="pill">Keras</span><span class="pill">OpenCV</span>
+      <span class="pill">BLIP</span><span class="pill">OCR</span><span class="pill">NLP</span>
+      <span class="pill">CNN</span><span class="pill">LSTM-CTC</span><span class="pill">ArcFace</span>
+      <span class="pill">OSNet</span><span class="pill">Flask</span><span class="pill">MySQL</span>
+      <span class="pill">GitHub</span><span class="pill">Jupyter</span><span class="pill">VS Code</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 04 — Projects</span>
+  <h2 class="reveal">Featured Work</h2>
+  <div class="divider reveal"></div>
+  <div class="project-grid reveal">
+
+    <div class="card">
+      <span class="card-idx">001</span>
+      <h3>AI Drone Surveillance System</h3>
+      <p class="project-role">Computer Vision · Deep Learning</p>
+      <p>Intelligent surveillance using CV and DL for real-time object detection and tracking in aerial monitoring pipelines.</p>
+      <ul>
+        <li>Real-time object detection and tracking</li>
+        <li>Automated aerial monitoring pipeline</li>
+        <li>AI-driven detection optimization</li>
+      </ul>
+      <div class="conf-badge">ICISD 2026 — Published</div>
+      <p class="card-stack">Python · OpenCV · TensorFlow · Deep Learning</p>
+    </div>
+
+    <div class="card">
+      <span class="card-idx">002</span>
+      <h3>Vision-to-Voice: Comics to Audio</h3>
+      <p class="project-role">Accessibility · AI · NLP</p>
+      <p>Converts comic books into narrated audio stories for visually impaired children using OCR and image captioning.</p>
+      <ul>
+        <li>BLIP + OCR for image understanding</li>
+        <li>NLP-driven narration generation</li>
+        <li>Google Drive storage integration</li>
+      </ul>
+      <div class="conf-badge">ICISD 2025 — Published</div>
+      <p class="card-stack">Python · Flask · OCR · BLIP · Google Drive API</p>
+    </div>
+
+    <div class="card">
+      <span class="card-idx">003</span>
+      <h3>Lectura — Offline Lecture AI</h3>
+      <p class="project-role">NLP · Speech Processing</p>
+      <p>Offline privacy-preserving speech-to-text system for lecture transcription with LSTM-CTC models.</p>
+      <ul>
+        <li>Voice Activity Detection (VAD)</li>
+        <li>Speaker embedding techniques</li>
+        <li>Automated summaries via LSTM-CTC</li>
+      </ul>
+      <div class="conf-badge">Smart Campus Vol. II — Published</div>
+      <p class="card-stack">Python · NLP · Speech Recognition · LSTM-CTC</p>
+    </div>
+
+    <div class="card">
+      <span class="card-idx">004</span>
+      <h3>Object Detection System</h3>
+      <p class="project-role">Computer Vision</p>
+      <p>Real-time multi-object detection using deep learning with Intel Neural Compute Stick 2 support.</p>
+      <ul>
+        <li>Real-time bounding box detection</li>
+        <li>Intel NCS2 hardware acceleration</li>
+        <li>Deep learning model integration</li>
+      </ul>
+      <p class="card-stack">Python · OpenCV · TensorFlow · Intel NCS2</p>
+    </div>
+
+    <div class="card">
+      <span class="card-idx">005</span>
+      <h3>Event Booking System</h3>
+      <p class="project-role">Full Stack</p>
+      <p>Complete event booking platform with ticket generation, seat selection, and email notifications.</p>
+      <ul>
+        <li>User auth and seat selection</li>
+        <li>Automated ticket generation</li>
+        <li>Email notification system</li>
+      </ul>
+      <p class="card-stack">Flask · MySQL · HTML · CSS · JavaScript</p>
+    </div>
+
+    <div class="card">
+      <span class="card-idx">006</span>
+      <h3>OD Management Portal</h3>
+      <p class="project-role">Workflow Automation</p>
+      <p>Automated On-Duty management for student requests, approvals and academic workflow automation.</p>
+      <ul>
+        <li>Google Forms integration</li>
+        <li>Approval workflow automation</li>
+        <li>Centralized data management</li>
+      </ul>
+      <p class="card-stack">Python · Flask · Google Forms · MySQL</p>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 05 — Research</span>
+  <h2 class="reveal">Publications</h2>
+  <div class="divider reveal"></div>
+  <div class="pub-list">
+    <div class="pub reveal">
+      <p class="pub-title">A Multi-Stage Computer Vision Architecture for UAV-Based Crowd Suspect Identification</p>
+      <p class="pub-venue">ICISD 2026 — International Conference on Intelligent Systems and Digital Transformation</p>
+    </div>
+    <div class="pub reveal">
+      <p class="pub-title">Vision-to-Voice: Transforming Comics into Immersive Audiobooks with BLIP and OCR</p>
+      <p class="pub-venue">ICISD 2025 — International Conference on Intelligent Systems and Digital Transformation</p>
+    </div>
+    <div class="pub reveal">
+      <p class="pub-title">Lecture Capture in Classroom</p>
+      <p class="pub-venue">Smart Campus Initiatives, Vol. II (2025)</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 06 — Awards</span>
+  <h2 class="reveal">Recognition</h2>
+  <div class="divider reveal"></div>
+  <div class="award-grid">
+    <div class="award reveal">
+      <div class="award-icon">🏆</div>
+      <p>Best Outgoing Student Award — SRM IST (2024–2026)</p>
+    </div>
+    <div class="award reveal">
+      <div class="award-icon">🎤</div>
+      <p>International Conference Presenter — ICISD 2026</p>
+    </div>
+    <div class="award reveal">
+      <div class="award-icon">🎤</div>
+      <p>International Conference Presenter — ICISD 2025</p>
+    </div>
+    <div class="award reveal">
+      <div class="award-icon">🚀</div>
+      <p>Pre-Finalist — SIGHT 3.0 National Technical Project Expo (2026)</p>
+    </div>
+    <div class="award reveal">
+      <div class="award-icon">🏅</div>
+      <p>Finalist — SIGHT 2.0 National Technical Project Expo (2025)</p>
+    </div>
+    <div class="award reveal">
+      <div class="award-icon">💻</div>
+      <p>Finalist — HACKELITE Hackathon, SRM Institute of Technology (2025)</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 07 — Education</span>
+  <h2 class="reveal">Academic Background</h2>
+  <div class="divider reveal"></div>
+  <div class="edu-list">
+    <div class="edu-card reveal">
+      <p class="edu-degree">M.Tech — Computer Science and Engineering</p>
+      <p class="edu-school">SRM Institute of Science and Technology, Chennai</p>
+      <div class="edu-meta">
+        <span>2024 – 2026</span>
+        <span>CGPA: 8.99 / 10</span>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <p class="edu-degree">B.E — Electronics and Communication Engineering</p>
+      <p class="edu-school">Vel Tech Multi Tech Dr Rangarajan Dr Sakunthala Engineering College, Chennai</p>
+      <div class="edu-meta">
+        <span>2020 – 2024</span>
+        <span>CGPA: 7.58 / 10</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 08 — Timeline</span>
+  <h2 class="reveal">My Path</h2>
+  <div class="divider reveal"></div>
+  <div class="timeline reveal">
+    <div class="event">
+      <p class="event-year">2020</p>
+      <h3>Started Engineering</h3>
+      <p>B.E in ECE — built foundations in programming, electronics, and problem solving.</p>
+    </div>
+    <div class="event">
+      <p class="event-year">2022 – 2023</p>
+      <h3>Full Stack Development</h3>
+      <p>Built event booking systems, shopping apps, and workflow automation platforms with Flask and MySQL.</p>
+    </div>
+    <div class="event">
+      <p class="event-year">2024</p>
+      <h3>M.Tech AI Focus</h3>
+      <p>Joined SRM for M.Tech CS specializing in AI, CV, and deep learning systems.</p>
+    </div>
+    <div class="event">
+      <p class="event-year">2025</p>
+      <h3>Research & Publications</h3>
+      <p>Published at ICISD 2025. Interned at Prodigy InfoTech. Finalist at SIGHT 2.0 and HACKELITE.</p>
+    </div>
+    <div class="event">
+      <p class="event-year">2026</p>
+      <h3>AI Engineer</h3>
+      <p>Interned at KaizenSpark. Published at ICISD 2026. Pre-finalist at SIGHT 3.0. Best Outgoing Student.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="section-inner">
+  <span class="sec-tag reveal">// 09 — Contact</span>
+  <h2 class="reveal">Get In Touch</h2>
+  <div class="divider reveal"></div>
+  <div class="reveal">
+    <form>
+      <input type="text" placeholder="your_name">
+      <input type="email" placeholder="your@email.com">
+      <textarea rows="5" placeholder="// message"></textarea>
+      <button type="submit" class="submit-btn">Send Message →</button>
+    </form>
+    <div class="contact-links">
+      <a href="mailto:paronasibsuneel@gmail.com" class="contact-link">✉ paronasibsuneel@gmail.com</a>
+      <a href="https://linkedin.com/in/paron-asib-s-0a71a72b1" class="contact-link" target="_blank">↗ LinkedIn</a>
+      <a href="https://github.com/PARONASIBS" class="contact-link" target="_blank">↗ GitHub</a>
+      <a href="tel:+918939386670" class="contact-link">✆ +91 89393 86670</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <p>PARON ASIB S — M.Tech AI Engineer · Chennai, India</p>
+  <p>paronasibsuneel@gmail.com · github.com/PARONASIBS</p>
+</footer>
+
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
